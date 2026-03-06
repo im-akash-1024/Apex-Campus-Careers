@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Internships – Apex Campus Careers</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Apex<span>Campus</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="internships.html" class="active">Internships</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get Started</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <span class="section-label">Internship Portal</span>
+    <h1 class="page-hero-title">Professional Internships:<br>Master Your <span class="accent">Domain</span></h1>
+    <p class="page-hero-sub">Every domain includes 2 Major Projects + 1 Minor Project. Build a portfolio that proves you're industry-ready.</p>
+    <div class="intern-badges">
+      <div class="intern-badge"><i class="fas fa-trophy"></i> 2 Major Projects</div>
+      <div class="intern-badge"><i class="fas fa-star"></i> 1 Minor Project</div>
+      <div class="intern-badge"><i class="fas fa-layer-group"></i> 20+ Domains</div>
+      <div class="intern-badge"><i class="fas fa-certificate"></i> Certified</div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark">
+  <div class="container">
+    <div class="fade-in text-center"><span class="section-label">Featured Tracks</span><h2 class="section-title">Explore Top Internship Tracks</h2><div class="divider center"></div></div>
+    <div class="tracks-grid fade-in">
+
+      <div class="track-card">
+        <div class="track-header"><div class="track-icon" style="background:rgba(100,255,218,0.1);"><i class="fas fa-globe" style="color:#64FFDA;"></i></div><div><div class="track-name">Full Stack Web Development</div><div class="track-tag">HTML · CSS · JS · React · Node · MongoDB</div></div></div>
+        <div class="track-body">
+          <div class="track-modules-title">Full Syllabus</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>HTML5 – Semantic Elements, Forms, Accessibility</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>CSS3 – Flexbox, Grid, Animations, Responsive Design</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>JavaScript – ES6+, DOM, Fetch API, Async/Await</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>React.js – Components, Hooks, Context API, Router</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Node.js – Express, REST APIs, Middleware</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>MongoDB – CRUD, Mongoose, Schema Design</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Authentication – JWT, Sessions, OAuth Basics</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Git &amp; GitHub – Branching, PRs, Version Control</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Deployment – Vercel, Render, Netlify</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 1: Full E-Commerce Platform</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 2: Social Media Dashboard App</div>
+          <div class="track-topic minor"><i class="fas fa-star"></i>Minor Project: Portfolio Website</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header"><div class="track-icon" style="background:rgba(247,183,49,0.1);"><i class="fab fa-python" style="color:#f7b731;"></i></div><div><div class="track-name">Python Development</div><div class="track-tag">Python · Django · Flask · APIs · Automation</div></div></div>
+        <div class="track-body">
+          <div class="track-modules-title">Full Syllabus</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Python Core – Syntax, OOP, Modules, File I/O</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Data Structures – Lists, Dicts, Sets, Tuples</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Libraries – NumPy, Pandas, Matplotlib</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Flask – Routing, Templates, Forms, REST API</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Django – MVT, ORM, Admin Panel, Auth</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Database – SQLite, PostgreSQL with Django</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Automation – Selenium, BeautifulSoup, Requests</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>APIs – RESTful APIs, JSON, Postman Testing</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Unit Testing – PyTest, Unittest</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 1: Django Blog + CMS Platform</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 2: Python Automation Tool</div>
+          <div class="track-topic minor"><i class="fas fa-star"></i>Minor Project: REST API with Flask</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header"><div class="track-icon" style="background:rgba(0,180,216,0.1);"><i class="fas fa-chart-line" style="color:#00b4d8;"></i></div><div><div class="track-name">Data Science &amp; Analytics</div><div class="track-tag">Python · ML · Pandas · Power BI</div></div></div>
+        <div class="track-body">
+          <div class="track-modules-title">Full Syllabus</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Statistics &amp; Probability Fundamentals</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>NumPy &amp; Pandas for Data Wrangling</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Data Visualization – Matplotlib, Seaborn</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Machine Learning – Regression, Classification</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Clustering &amp; Dimensionality Reduction</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Feature Engineering &amp; EDA</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>SQL for Data Analysts</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Power BI / Tableau Dashboards</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 1: End-to-End ML Pipeline</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 2: Business Analytics Dashboard</div>
+          <div class="track-topic minor"><i class="fas fa-star"></i>Minor Project: EDA on Real Dataset</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header"><div class="track-icon" style="background:rgba(255,107,107,0.1);"><i class="fab fa-java" style="color:#ff6b6b;"></i></div><div><div class="track-name">Java Development</div><div class="track-tag">Java · Spring Boot · Hibernate · Microservices</div></div></div>
+        <div class="track-body">
+          <div class="track-modules-title">Full Syllabus</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Core Java – OOP, Collections, Generics</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Exception Handling &amp; Multithreading</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>JDBC &amp; MySQL Integration</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Spring Boot – REST APIs, Annotations</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Hibernate &amp; Spring Data JPA</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Spring Security – JWT Auth</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Microservices Architecture Basics</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 1: Spring Boot Banking App</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 2: Microservices E-Commerce</div>
+          <div class="track-topic minor"><i class="fas fa-star"></i>Minor Project: CRUD REST API</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header"><div class="track-icon" style="background:rgba(100,255,150,0.1);"><i class="fab fa-android" style="color:#64ff96;"></i></div><div><div class="track-name">Android App Development</div><div class="track-tag">Kotlin · Android Studio · Firebase</div></div></div>
+        <div class="track-body">
+          <div class="track-modules-title">Full Syllabus</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Kotlin – Fundamentals &amp; OOP</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Android Studio Setup &amp; Layouts</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Activities, Fragments &amp; Navigation</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>RecyclerView, Adapters &amp; Lists</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Room Database &amp; ViewModel</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Retrofit for REST API calls</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Firebase – Auth, Firestore, Storage</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 1: Food Delivery App</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 2: Chat Application</div>
+          <div class="track-topic minor"><i class="fas fa-star"></i>Minor Project: To-Do / Notes App</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header"><div class="track-icon" style="background:rgba(200,100,255,0.1);"><i class="fas fa-robot" style="color:#c77dff;"></i></div><div><div class="track-name">Machine Learning &amp; AI</div><div class="track-tag">Python · Scikit-learn · TensorFlow · NLP</div></div></div>
+        <div class="track-body">
+          <div class="track-modules-title">Full Syllabus</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Python for ML – NumPy, Pandas, Matplotlib</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Supervised Learning – Regression, Classification</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Unsupervised Learning – Clustering, PCA</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Neural Networks – ANN, CNN, RNN</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Deep Learning with TensorFlow/Keras</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>NLP – Text Processing, Sentiment Analysis</div>
+          <div class="track-topic"><i class="fas fa-check-circle"></i>Model Deployment with Flask/FastAPI</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 1: Image Classification System</div>
+          <div class="track-topic project"><i class="fas fa-trophy"></i>Major Project 2: Sentiment Analyzer &amp; Chatbot</div>
+          <div class="track-topic minor"><i class="fas fa-star"></i>Minor Project: Price Prediction Model</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section bg-mid">
+  <div class="container">
+    <div class="fade-in text-center"><span class="section-label">All Domains</span><h2 class="section-title">20 Internship Domains</h2><div class="divider center"></div></div>
+    <div class="domains-full-grid fade-in">
+      <div class="domain-pill"><i class="fas fa-globe"></i>Full Stack Web Dev</div>
+      <div class="domain-pill"><i class="fab fa-python"></i>Python Development</div>
+      <div class="domain-pill"><i class="fas fa-chart-line"></i>Data Science &amp; Analytics</div>
+      <div class="domain-pill"><i class="fab fa-java"></i>Java Development</div>
+      <div class="domain-pill"><i class="fas fa-mobile-alt"></i>Android App Dev</div>
+      <div class="domain-pill"><i class="fab fa-react"></i>React / Frontend Dev</div>
+      <div class="domain-pill"><i class="fas fa-robot"></i>Machine Learning &amp; AI</div>
+      <div class="domain-pill"><i class="fas fa-cloud"></i>Cloud Computing (AWS/Azure)</div>
+      <div class="domain-pill"><i class="fas fa-database"></i>Database Administration</div>
+      <div class="domain-pill"><i class="fas fa-shield-alt"></i>Cyber Security</div>
+      <div class="domain-pill"><i class="fas fa-network-wired"></i>DevOps &amp; CI/CD</div>
+      <div class="domain-pill"><i class="fas fa-brain"></i>Deep Learning &amp; NLP</div>
+      <div class="domain-pill"><i class="fas fa-cogs"></i>Embedded Systems &amp; IoT</div>
+      <div class="domain-pill"><i class="fas fa-palette"></i>UI/UX Design</div>
+      <div class="domain-pill"><i class="fas fa-tasks"></i>Software Testing &amp; QA</div>
+      <div class="domain-pill"><i class="fas fa-link"></i>Blockchain Development</div>
+      <div class="domain-pill"><i class="fas fa-server"></i>Backend Engineering</div>
+      <div class="domain-pill"><i class="fas fa-bullhorn"></i>Digital Marketing</div>
+      <div class="domain-pill"><i class="fas fa-business-time"></i>Business Analytics</div>
+      <div class="domain-pill"><i class="fas fa-cube"></i>AR/VR Development</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container"><div class="cta-content fade-in"><h2>Pick Your Domain. Start Building.</h2><p>Contact us and our counsellors will help you choose the right track.</p><div class="cta-actions"><a href="contact.html" class="btn-primary">Apply for Internship</a><a href="training.html" class="btn-outline">View Training</a></div></div></div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Apex<span>Campus</span> Careers</div><p class="footer-desc">Transforming college students into industry-ready professionals.</p><div class="social-links"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-link"><i class="fab fa-twitter"></i></a><a href="#" class="social-link"><i class="fab fa-youtube"></i></a><a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div><div class="footer-col-title">Programs</div><ul class="footer-links"><li><a href="training.html">Training</a></li><li><a href="internships.html">Internships</a></li></ul></div>
+      <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="index.html#about">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:apexcampuscareers@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;color:var(--teal);"></i>apexcampuscareers@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 <span>Apex Campus Careers</span>. All rights reserved.</div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

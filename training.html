@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Training Modules – Apex Campus Careers</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Apex<span>Campus</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="training.html" class="active">Training</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get Started</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <span class="section-label">Curriculum</span>
+    <h1 class="page-hero-title">Detailed Training <span class="accent">Modules</span></h1>
+    <p class="page-hero-sub">A comprehensive, structured syllabus spanning aptitude, technical, and career readiness — engineered to match what top companies actually test and hire for.</p>
+  </div>
+</section>
+
+<section class="section bg-dark">
+  <div class="container">
+    <div class="training-tabs fade-in">
+      <button class="tab-btn active" onclick="switchTab('aptitude',this)"><i class="fas fa-brain"></i> Aptitude Training</button>
+      <button class="tab-btn" onclick="switchTab('technical',this)"><i class="fas fa-code"></i> Technical Training</button>
+      <button class="tab-btn" onclick="switchTab('career',this)"><i class="fas fa-briefcase"></i> Career Readiness</button>
+    </div>
+
+    <!-- APTITUDE -->
+    <div class="tab-panel active" id="tab-aptitude">
+      <div class="accordion-item open">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-calculator"></i></div><span class="acc-title">Quantitative Aptitude</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Number Systems</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>HCF &amp; LCM</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Percentages</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Profit, Loss &amp; Discount</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Simple &amp; Compound Interest</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Ratio &amp; Proportion</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Averages</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Mixtures &amp; Alligations</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Time, Speed &amp; Distance</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Time &amp; Work</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Pipes &amp; Cisterns</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Ages Problems</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Permutations &amp; Combinations</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Probability</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Boats &amp; Streams</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Trains &amp; Relative Motion</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Geometry &amp; Mensuration</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Simplification &amp; BODMAS</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Surds &amp; Indices</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Quadratic Equations</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-puzzle-piece"></i></div><span class="acc-title">Logical Reasoning</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Number Series &amp; Patterns</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Alphabet Series</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Coding &amp; Decoding</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Blood Relations</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Direction Sense</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Seating Arrangements</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Circular Arrangements</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Syllogisms</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Analogies</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Odd One Out</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Ranking &amp; Order</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Input-Output Problems</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Clocks &amp; Calendars</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Venn Diagrams</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Statement &amp; Conclusions</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Critical Reasoning</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Assumptions &amp; Arguments</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Cause &amp; Effect</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-spell-check"></i></div><span class="acc-title">Verbal Ability</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Reading Comprehension</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Synonyms &amp; Antonyms</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Fill in the Blanks</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Sentence Correction</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Para Jumbles</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Idioms &amp; Phrases</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>One Word Substitution</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Error Spotting</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Active &amp; Passive Voice</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Direct &amp; Indirect Speech</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Sentence Completion</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Cloze Test</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Grammar Fundamentals</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Word Usage in Context</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-chart-bar"></i></div><span class="acc-title">Data Interpretation</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Bar Graphs</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Line Graphs</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Pie Charts</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Tables &amp; Tabular Data</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Mixed Charts</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Data Sufficiency</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Caselet DI</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Radar Charts</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Percentage-based DI</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Ratio-based DI</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Missing Data Problems</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Comparison &amp; Ranking DI</div>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL -->
+    <div class="tab-panel" id="tab-technical">
+      <div class="accordion-item open">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-terminal"></i></div><span class="acc-title">Programming Languages</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>C – Basics to Pointers</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>C++ – OOP Concepts</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Python – Scripting &amp; OOP</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Java – Core &amp; OOP</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Variables &amp; Data Types</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Control Flow</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Functions &amp; Recursion</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Pointers &amp; Memory Management</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Classes, Objects &amp; Inheritance</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Exception Handling</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>File I/O</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>STL / Collections</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Polymorphism &amp; Abstraction</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Basic Regex</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-sitemap"></i></div><span class="acc-title">Data Structures &amp; Algorithms (DSA)</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Arrays &amp; Strings</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Linked Lists (SLL, DLL, Circular)</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Stacks &amp; Queues</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Binary Trees</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Binary Search Trees</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Heaps &amp; Priority Queues</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Hashing &amp; Hash Maps</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Graphs (BFS, DFS)</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Sorting Algorithms</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Searching Algorithms</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Recursion &amp; Backtracking</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Dynamic Programming</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Greedy Algorithms</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Divide &amp; Conquer</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Tries &amp; Segment Trees</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Time &amp; Space Complexity (Big-O)</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-building"></i></div><span class="acc-title">Company-Based Training</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>TCS NQT Pattern &amp; Strategy</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Infosys Coding Test Prep</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Wipro NLTH Preparation</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Accenture Assessment Prep</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Cognizant GenC Pattern</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Capgemini Coding Round</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Product Company (FAANG-style)</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>HackerRank &amp; LeetCode Strategy</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Previous Year Question Analysis</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Mock Company Tests (Timed)</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Email Etiquette &amp; HR Questions</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Psychometric Test Practice</div>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- CAREER -->
+    <div class="tab-panel" id="tab-career">
+      <div class="accordion-item open">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-file-alt"></i></div><span class="acc-title">Resume Building</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>ATS-Friendly Resume Formats</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Writing Strong Action Bullets</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Quantifying Achievements</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Skills Section Optimization</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Projects Section Structure</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>LinkedIn Profile Optimization</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>GitHub Portfolio Building</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Cover Letter Writing</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Tailoring Resumes per Role</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>1:1 Resume Review Sessions</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-clipboard-list"></i></div><span class="acc-title">Mock Tests</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Full-Length Aptitude Mocks</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Technical MCQ Tests</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Company-Specific Mock Rounds</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Coding Contest Simulations</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Speed &amp; Accuracy Drills</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Sectional Mock Tests</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Psychometric Tests</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Detailed Score Analysis</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Percentile Benchmarking</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-user-tie"></i></div><span class="acc-title">Mock Interviews</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>HR Interview Simulation</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Technical Interview Rounds</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Behavioral Questions (STAR Method)</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>"Tell Me About Yourself" Coaching</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Salary Negotiation Practice</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Video Interview Etiquette</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Confidence &amp; Body Language</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Panel Interview Practice</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Post-Interview Debrief</div>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><div class="acc-icon"><i class="fas fa-comments"></i></div><span class="acc-title">GD Training &amp; Feedback Sessions</span></div><i class="fas fa-chevron-down acc-arrow"></i></div>
+        <div class="accordion-body"><div class="topic-grid">
+          <div class="topic-tag"><i class="fas fa-circle-dot"></i>Group Discussion Fundamentals</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Topic-Based GD Practice</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Case Study GDs</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Role of Initiator / Moderator</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Listening &amp; Rebuttal Skills</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Time Management in GDs</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Current Affairs for GDs</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Evaluation Criteria Walkthrough</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>1:1 Personalized Feedback</div><div class="topic-tag"><i class="fas fa-circle-dot"></i>Progress Tracking Reports</div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container"><div class="cta-content fade-in"><h2>Interested in Our Training?</h2><p>Reach out and we'll help you get started on the right track.</p><div class="cta-actions"><a href="contact.html" class="btn-primary">Contact Us</a><a href="internships.html" class="btn-outline">View Internships</a></div></div></div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Apex<span>Campus</span> Careers</div><p class="footer-desc">Transforming college students into industry-ready professionals.</p><div class="social-links"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-link"><i class="fab fa-twitter"></i></a><a href="#" class="social-link"><i class="fab fa-youtube"></i></a><a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div><div class="footer-col-title">Programs</div><ul class="footer-links"><li><a href="training.html">Training</a></li><li><a href="internships.html">Internships</a></li></ul></div>
+      <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="index.html#about">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:apexcampuscareers@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;color:var(--teal);"></i>apexcampuscareers@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 <span>Apex Campus Careers</span>. All rights reserved.</div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
