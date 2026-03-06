@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us – Apex Campus Careers</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Apex<span>Campus</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="internships.html">Internships</a></li>
+    <li><a href="contact.html" class="active">Contact Us</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get Started</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <span class="section-label">Get In Touch</span>
+    <h1 class="page-hero-title">We're Here to <span class="accent">Help You</span></h1>
+    <p class="page-hero-sub">Interested in our training or internship programs? Fill in the form below and we'll get back to you within 24 hours.</p>
+  </div>
+</section>
+
+<section class="section bg-dark">
+  <div class="container">
+    <div class="contact-layout fade-in">
+
+      <!-- LEFT INFO -->
+      <div class="contact-left">
+        <div class="contact-info-card">
+          <h3 class="contact-info-title">Contact Information</h3>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:apexcampuscareers@gmail.com" class="contact-value">apexcampuscareers@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-label">Response Time</div>
+              <div class="contact-value">Within 24 hours</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Reach</div>
+              <div class="contact-value">Pan-India · Online &amp; Offline</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon-wrap"><i class="fas fa-calendar-alt"></i></div>
+            <div>
+              <div class="contact-label">Founded</div>
+              <div class="contact-value">February 2026 by Akash G.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 class="contact-info-title" style="margin-bottom:16px;">Quick Topic Shortcuts</h3>
+          <div class="support-topic-item" onclick="prefillTopic('Training Programs & Syllabus')"><i class="fas fa-graduation-cap"></i><span>Training Programs</span><i class="fas fa-arrow-right arrow-right"></i></div>
+          <div class="support-topic-item" onclick="prefillTopic('Internship Enrollment')"><i class="fas fa-briefcase"></i><span>Internship Enrollment</span><i class="fas fa-arrow-right arrow-right"></i></div>
+          <div class="support-topic-item" onclick="prefillTopic('Fees & Payment Plans')"><i class="fas fa-rupee-sign"></i><span>Fees &amp; Payment Plans</span><i class="fas fa-arrow-right arrow-right"></i></div>
+          <div class="support-topic-item" onclick="prefillTopic('Certificate & Projects')"><i class="fas fa-certificate"></i><span>Certificate &amp; Projects</span><i class="fas fa-arrow-right arrow-right"></i></div>
+          <div class="support-topic-item" onclick="prefillTopic('Placement & Job Support')"><i class="fas fa-handshake"></i><span>Placement Support</span><i class="fas fa-arrow-right arrow-right"></i></div>
+          <div class="support-topic-item" onclick="prefillTopic('General Inquiry')"><i class="fas fa-question-circle"></i><span>General Inquiry</span><i class="fas fa-arrow-right arrow-right"></i></div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 class="contact-info-title" style="margin-bottom:16px;">Connect With Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="contact-right">
+        <div class="contact-form-card" id="contactFormWrap">
+          <div class="form-card-header">
+            <h3>Send Us a Message</h3>
+            <p>We reply to every message at <strong>apexcampuscareers@gmail.com</strong></p>
+          </div>
+
+          <div id="formSuccess" class="form-success" style="display:none;">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We'll reply to <strong>your email</strong> within 24 hours.</p>
+            <button class="btn-primary" style="margin-top:20px;" onclick="resetForm()">Send Another Message</button>
+          </div>
+
+          <div id="formFields">
+            <div class="form-row-2">
+              <div class="form-group"><label class="form-label">First Name *</label><input id="cfFirst" type="text" class="form-input" placeholder="Rahul"/></div>
+              <div class="form-group"><label class="form-label">Last Name *</label><input id="cfLast" type="text" class="form-input" placeholder="Sharma"/></div>
+            </div>
+            <div class="form-group"><label class="form-label">Email Address *</label><input id="cfEmail" type="email" class="form-input" placeholder="rahul@college.edu"/></div>
+            <div class="form-group"><label class="form-label">Phone Number</label><input id="cfPhone" type="text" class="form-input" placeholder="+91 9876543210"/></div>
+            <div class="form-group"><label class="form-label">College / University</label><input id="cfCollege" type="text" class="form-input" placeholder="e.g. VIT Chennai"/></div>
+            <div class="form-group"><label class="form-label">Interested In</label><input id="cfTopic" type="text" class="form-input" placeholder="e.g. Full Stack Internship, Aptitude Training…"/></div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select id="cfCategory" class="form-input">
+                <option value="">Select a category</option>
+                <option>Training Program Inquiry</option>
+                <option>Internship Enrollment</option>
+                <option>Fees &amp; Payment</option>
+                <option>Certificate &amp; Projects</option>
+                <option>Placement Support</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">Your Message *</label><textarea id="cfMessage" class="form-textarea" rows="5" placeholder="Tell us how we can help you…"></textarea></div>
+            <button id="cfBtn" class="btn-primary" style="width:100%;" onclick="submitContactForm()">
+              Send Message &nbsp;<i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-note"><i class="fas fa-lock"></i> Your information is private and will never be shared.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-mid">
+  <div class="container">
+    <div class="fade-in text-center"><span class="section-label">FAQ</span><h2 class="section-title">Frequently Asked Questions</h2><div class="divider center"></div></div>
+    <div class="faq-grid fade-in">
+      <div class="accordion-item open"><div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-title">Who is this program for?</span></div><i class="fas fa-chevron-down acc-arrow"></i></div><div class="accordion-body"><p class="faq-ans">Apex Campus Careers is designed for college students (1st year to final year) across all branches who want to build industry-relevant skills and secure good placements at top companies.</p></div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-title">Is the training online or offline?</span></div><i class="fas fa-chevron-down acc-arrow"></i></div><div class="accordion-body"><p class="faq-ans">We offer a hybrid model — both online and offline. You can attend live sessions from anywhere and also visit our training center if you're local.</p></div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-title">What certificate will I receive?</span></div><i class="fas fa-chevron-down acc-arrow"></i></div><div class="accordion-body"><p class="faq-ans">Upon completion of training or internship modules, you will receive an industry-recognized certificate from Apex Campus Careers for your resume and LinkedIn profile.</p></div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-title">How do I enroll for an internship?</span></div><i class="fas fa-chevron-down acc-arrow"></i></div><div class="accordion-body"><p class="faq-ans">Simply fill out the contact form above. Our counsellors will reach out to help you pick the right domain and guide you through enrollment.</p></div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-title">Are there payment plan options?</span></div><i class="fas fa-chevron-down acc-arrow"></i></div><div class="accordion-body"><p class="faq-ans">Yes, we offer flexible payment plans including EMI options. Contact us at apexcampuscareers@gmail.com to discuss what works best for you.</p></div></div>
+      <div class="accordion-item"><div class="accordion-header" onclick="toggleAcc(this)"><div class="acc-left"><span class="acc-title">What kind of projects will I work on?</span></div><i class="fas fa-chevron-down acc-arrow"></i></div><div class="accordion-body"><p class="faq-ans">Each internship domain includes 2 Major Projects and 1 Minor Project — all industry-grade, real-world projects you can showcase in your portfolio.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Apex<span>Campus</span> Careers</div><p class="footer-desc">Transforming college students into industry-ready professionals through a 360-degree ecosystem.</p><div class="social-links"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a><a href="#" class="social-link"><i class="fab fa-twitter"></i></a><a href="#" class="social-link"><i class="fab fa-youtube"></i></a><a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a></div></div>
+      <div><div class="footer-col-title">Programs</div><ul class="footer-links"><li><a href="training.html">Training</a></li><li><a href="internships.html">Internships</a></li></ul></div>
+      <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="index.html#about">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a href="mailto:apexcampuscareers@gmail.com"><i class="fas fa-envelope" style="margin-right:8px;color:var(--teal);"></i>apexcampuscareers@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-copy">© 2026 <span>Apex Campus Careers</span>. All rights reserved. Founded by Akash G.</div></div>
+  </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
